@@ -1,3 +1,7 @@
 spring:
   application:
     name: cms-local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bd_updt_hstrc
+    username: cms_local
+    password: ${SPRING_DATASOURCE_PASSWORD}
