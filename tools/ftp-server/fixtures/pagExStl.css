@@ -1,0 +1,188 @@
+body {
+    background: #141414;
+    font-family: Helvetica;
+    text-align: justify;
+    hyphens: auto;
+    margin: 0;
+    display: grid;
+    place-content: center;
+
+}
+
+h2, p {
+    margin: 5px;
+}
+
+.cbclh{
+    color: #FFFFFF;
+}
+
+.cntnrGrl {
+    display: grid;
+    background: #FFFFFF;
+    margin: 5px;
+    border: solid #000000;
+    max-width: 900px;
+    max-height: 570px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    grid-template-areas:
+    "cntnr0 cntnr1 cntnr2 cntnr3"
+    "cntnr0 cntnr4 cntnr4 cntnr4";
+    grid-template-rows: auto auto;
+    grid-template-columns: 10% 28.5% 28.5% 32%;
+    gap: 3px;
+
+}
+
+.cntnr0 {
+    margin: 3px 0 3px 0;
+    grid-area: cntnr0;
+    text-align: center;
+    background: #141414;
+    border-left: 4px solid #B83232;
+    border-radius: 0 12px 12px 0;
+    color: #FFFFFF;
+}
+
+#ttl1 {
+    writing-mode: sideways-lr;
+    margin-top: 25%;
+}
+
+
+.cntnr1 {
+    grid-area: cntnr1;
+    margin: 3px;
+    background: #141414;
+    color: #EBEBEB;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 1px 1px 4px #141414;
+    transition: all 500ms ease;
+
+}
+
+.cntnr1:hover{
+    margin: 3px;
+    padding: 3px 6px;
+    border: none;
+    box-shadow: 0 1px 20px #D94A4A;
+    transition: all 500ms ease;
+
+}
+
+.cntnr2 {
+    grid-area: cntnr2;
+    margin: 3px;
+    background: #141414;
+    color: #EBEBEB;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 1px 1px 4px #141414;
+    transition: all 500ms ease;
+}
+
+.cntnr2 ol {
+    margin: 10px;
+}
+
+.cntnr2:hover{
+    margin: 3px;
+    padding: 3px 6px;
+    border: none;
+    box-shadow: 0 1px 20px #D94A4A;
+    transition: all 500ms ease;
+}
+
+
+.cntnr3 {
+    grid-area: cntnr3;
+    margin: 3px;
+    background: #141414;
+    color: #EBEBEB;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 1px 1px 4px #141414;
+    transition: all 500ms ease;
+}
+
+.LiPrgf {
+    list-style: none;
+}
+
+.prgfInLi {
+    margin: 0;
+}
+.cntnr3:hover{
+    margin: 3px;
+    padding: 3px 6px;
+    border: none;
+    box-shadow: 0 1px 20px #D94A4A;
+    transition: all 500ms ease;
+}
+
+.cntnr3 a{
+    color: #FFFFFF;
+    font-size: small;
+    text-decoration: none;
+    writing-mode: sideways-lr;
+    margin: 0 0 0 90%;
+}
+.cntnr3 a:link{
+    color: #FFFFFF;
+}
+
+.cntnr3 a:visited{
+    color: #FFFFFF;
+}
+
+.cntnr3 a:hover{
+    color: #D94A4A;
+}
+
+.cntnr4 {
+    grid-area: cntnr4;
+    margin: 3px;
+    background: #141414;
+    color: #EBEBEB;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: -1px 0 20px #141414;
+    transition: all 500ms ease;
+
+}
+
+.cntr4:hover{
+    margin: 3px;
+    padding: 3px 6px;
+    border: none;
+    box-shadow: -1px 0 50px #711e7e;
+    transition: all 500ms ease;
+
+
+}
+
+.cntnr4 table {
+    margin: auto;
+    caption-side: bottom;
+    text-align: center;
+}
+
+.cntnr4 td {
+    background: none;
+    padding: 0 10px 0;
+    transition: background-color 500ms ease;
+}
+
+.cntnr4 td:hover {
+    background: rgb(73 73 73 / 0.45);
+
+}
+
+
+
