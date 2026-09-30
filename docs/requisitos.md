@@ -56,11 +56,13 @@
 
 - The CMS stores FTP configuration (server URL, page list with ftp_path) in the local database; FTP credentials are re-entered at every session and live in memory only.
 - The CMS renders the target page with an overlay on editable blocks (identified by `data-editable` attributes, e.g. `<p data-editable="text" data-max-length="200">`, `<img data-editable="image" ...>`).
-- Every saved edit creates a revision snapshot of the block; the last 3 are kept; the History screen compares versions and allows per-block rollback.
+- Every save of a page creates one revision snapshot of the page's block contents (all blocks, one jsonb payload); the last 3 are kept; the History screen compares versions side by side and allows per-block rollback.
 - If the target pages lack these attributes, the CMS provides a **one-time block-mapping configuration mode**: user clicks elements, the CMS saves a block map (CSS selector + type + constraints per block) as JSON in the local database.
 - **Text blocks**: clicking opens a dialog; only the text content is editable, within the `max_length` limit.
 - **Image blocks**: clicking opens a dialog; upload a new image **with the same dimensions**, changing only the file (name and type may change). Uploads failing validation (not a real image, wrong dimensions, exceeding `max_file_size_mb`) are **rejected with a clear message**.
 - Menus, CSS, layout, and all non-editable page elements remain untouched.
+
+Every save of a page creates one revision snapshot of the page's block contents (all blocks, one jsonb payload); the last 3 are kept; the History screen compares versions side by side and allows per-block rollback.
 
 ## Security Requirements
 
