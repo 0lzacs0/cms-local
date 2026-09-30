@@ -62,8 +62,6 @@
 - **Image blocks**: clicking opens a dialog; upload a new image **with the same dimensions**, changing only the file (name and type may change). Uploads failing validation (not a real image, wrong dimensions, exceeding `max_file_size_mb`) are **rejected with a clear message**.
 - Menus, CSS, layout, and all non-editable page elements remain untouched.
 
-Every save of a page creates one revision snapshot of the page's block contents (all blocks, one jsonb payload); the last 3 are kept; the History screen compares versions side by side and allows per-block rollback.
-
 ## Security Requirements
 
 1. FTP credentials **in memory only**, never in the database, logs, or config files.
